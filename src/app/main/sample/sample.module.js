@@ -23,6 +23,9 @@
                     SampleData: function (msApi)
                     {
                         return msApi.resolve('sample@get');
+                    },
+                    auth: function($auth) {
+                      return $auth.validateUser();
                     }
                 }
             });

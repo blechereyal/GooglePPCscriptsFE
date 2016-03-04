@@ -7,13 +7,11 @@
         .controller('IndexController', IndexController);
 
     /** @ngInject */
-    function IndexController(fuseTheming)
+    function IndexController(fuseTheming, $auth)
     {
         var vm = this;
 
         // Data
         vm.themes = fuseTheming.themes;
-
-        //////////
     }
 })();

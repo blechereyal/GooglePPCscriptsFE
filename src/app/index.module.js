@@ -20,7 +20,15 @@
             // Quick panel
             'app.quick-panel',
 
-            // Sample
-            'app.sample'
+            // MODULES
+            'app.sample',
+            'app.auth.forgot-password',
+            'app.auth.lock',
+            'app.auth.login',
+            'app.auth.register',
+            'app.auth.reset-password',
+
+            // Third party
+            'ng-token-auth'
         ]);
 })();
