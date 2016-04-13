@@ -21,7 +21,7 @@
             'app.quick-panel',
 
             // MODULES
-            'app.sample',
+            'app.clients',
             'app.auth.forgot-password',
             'app.auth.lock',
             'app.auth.login',

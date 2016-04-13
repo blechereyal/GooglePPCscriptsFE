@@ -178,9 +178,25 @@
         var api = {};
 
         // Base Url
-        api.baseUrl = 'app/data/';
+        // TODO: change this
+        api.baseUrl = 'http://localhost:3000';
 
         // api.sample = $resource(api.baseUrl + 'sample/sample.json');
+
+        api.client = {
+            list     : $resource(api.baseUrl + '/clients'),
+            // getById  : $resource('http://api.example.com/blog/:id', {id: '@id'}),
+            // getByDate: $resource('http://api.example.com/blog/:date', {id: '@date'},
+            //         {
+            //             get: {
+            //                 method: 'GET',
+            //                 params: {
+            //                     getByDate: true
+            //                 }
+            //             }
+            //         }
+            // )
+        }
 
         return api;
     }

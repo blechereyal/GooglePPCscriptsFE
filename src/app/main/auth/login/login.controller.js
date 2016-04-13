@@ -16,7 +16,7 @@
       $scope.login = function() {
         $auth.submitLogin($scope.vm.form)
         .then(function(resp) {
-          $state.go('app.sample')
+          $state.go('app.clients')
         })
         .catch(function(resp) {
         });

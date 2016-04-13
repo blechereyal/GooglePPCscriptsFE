@@ -1,0 +1,15 @@
+<div id="clients" class="flex-scrollable" layout="column" ms-scroll>
+    <md-list>
+      <md-list-item class="md-2-line" ng-repeat="clientObject in vm.clients">
+        <!-- <md-checkbox ng-model="item.done"></md-checkbox> -->
+        <div class="md-list-item-text">
+            <h3>{{clientObject.client.name}}</h3>
+            <p>
+                {{clientObject.client.contact_name}}
+                <i class="icon s8 icon-email"></i>
+                <b>{{clientObject.client.contact_email}}</b>
+            </p>
+        </div>
+      </md-list-item>
+    </md-list>
+</div>
